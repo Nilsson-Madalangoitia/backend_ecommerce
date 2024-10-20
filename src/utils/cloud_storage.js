@@ -7,14 +7,14 @@ const uuid = uuidv4();
 
 
 const storage = new Storage({
-    projectId: "fir-mvvm-237fb",
+    projectId: "ecommerce-e96a2",
     keyFilename: './serviceAccountKey.json'
 });
 
-const bucket = storage.bucket("gs://fir-mvvm-237fb.appspot.com/");
+const bucket = storage.bucket("gs://ecommerce-e96a2.appspot.com/");
 
 /**
- * Subir el archivo a Firebase Storage
+ * Subir el archivo a Firebase Storage 
  * file objeto que sera almacenado en Firebase Storage
  */
 module.exports = (file, pathImage) => {

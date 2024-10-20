@@ -5,6 +5,6 @@ import { ValidationPipe } from '@nestjs/common';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.useGlobalPipes(new ValidationPipe({ forbidUnknownValues: false }));
-  await app.listen(3000, '172.20.10.2');
+  await app.listen(3000, '192.168.18.14');
 }
 bootstrap();
